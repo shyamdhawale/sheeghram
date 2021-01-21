@@ -8,10 +8,16 @@
 /* } */
 .main-left {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+   
+    /* height: 480px;
+    width: 853px; */
+    /* top: 20%; */
+    /* left: 0%; */ */
     /* width: 100%; */
-    right: 50%;
+    /* right: 50%;
     bottom: 0;
     /* background-color: salmon; */
     /* animation: zoominoutsinglefeatured 15s forwards; */
@@ -20,14 +26,16 @@
 }
 .main-right {
     font-family: 'Amatic SC', cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: fixed;
     font-weight: bold;
     top: 0;
-    left: 50%;
+    left: 11%;
     right: 0;
     bottom: 0;
-    background-color: #0F285C;
+    background: linear-gradient(to top left, blue 50%, transparent 50%),
+    linear-gradient(to top right, green 50%, transparent 50%), green
+    /* background-color: #0F285C; */
    
     color: yellow;
     /* font-weight: bold; */
@@ -64,6 +72,7 @@ img {
     /* font-size: 10rem; */
     text-align: center;
     font-weight: bold;
+    font-size: 6rem;
 }
 
 #menu {
@@ -96,7 +105,7 @@ img {
     padding-left: 5%;
     text-align: left;
     /* background-color: #4CAF50; */
-    color: #FDFDFD ;
+    color:yellow ;
   }
   /* div {
     width: 100px;
@@ -109,8 +118,8 @@ img {
   
 
   @keyframes mymove {
-    from {left: 0px;}
-    to {left: 500px;}
+    from {right: 100px;}
+    to {left: 1500px;}
   }
   
   @keyframes zoominoutsinglefeatured {
@@ -176,4 +185,15 @@ img {
     to {
       transform: rotate(-20deg) scale(1.1);
     }
+  }
+
+  .coffee{
+      border: violet;
+      position: fixed;
+      top: 45%;
+      left: 70%;
+      width: 300px;
+      height: 300px;
+      animation: mymove 5s infinite
+    
   }
